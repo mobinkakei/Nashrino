@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Anjoman;
+  src: url(../public/font/Anjoman-FaNum-Regular.woff);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Anjoman;
+  src: url(../public/font/Anjoman-FaNum-Medium.woff);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Anjoman;
+  src: url(../public/font/Anjoman-FaNum-SemiBold.woff);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: Anjoman;
+  src: url(../public/font/Anjoman-FaNum-Light.woff);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: Anjoman;
+  src: url(../public/font/Anjoman-FaNum-Bold.woff);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Anjoman;
+  src: url(../public/font/Anjoman-FaNum-Black.woff);
+  font-weight: bolder;
+}
+
+body {
+  direction: rtl;
+  background-color: #e6e6ff;
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: Peyda;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+.animatedButton{
+  animation-duration: 10000ms;
+}
+
+.ql-container{
+  border: none !important;
+}
+.ql-toolbar{
+  border: none !important;
+}
+.ql-editor{
+  border: none !important;
+}
+
+input::focuced{
+  border: none;
+}
+
+.ProseMirror {
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  min-height: 200px;
+  max-height: 500px;
+  overflow-y: auto;
+  direction: rtl; 
+}
+
+.ProseMirror:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
